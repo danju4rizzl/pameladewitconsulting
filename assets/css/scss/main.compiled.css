@@ -100,13 +100,19 @@ body {
 }
 
 .service-cards .card {
+  transition: all 0.1s ease-in;
   background: #f3f3f3 !important;
   border: none;
-  transition: all .3s linear;
   padding: 2rem 0.95rem;
   border-radius: 0;
   font-weight: 300;
   font-size: 0.85rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .service-cards .card {
+    padding: 0rem;
+  }
 }
 
 .service-cards .card:hover {
@@ -127,6 +133,33 @@ body {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .service-cards__title {
+    font-size: 0.7rem;
+    padding: 0rem;
+  }
+}
+
 .service-cards__text {
   color: #4c4d4f;
+}
+
+.about-section {
+  background: #FFFFFF;
+}
+
+.about-section-left {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.95)), url("https://i.ibb.co/JCsZ1vG/mimi-thian-VHQ0cw2eu-A-unsplash.jpg");
+  background-size: cover;
+  background-position: top center;
+  height: 100%;
+}
+
+.about-section-right {
+  padding: 3rem 4rem;
+}
+
+.about-section__text {
+  color: #4c4d4f;
+  line-height: 29px;
 }

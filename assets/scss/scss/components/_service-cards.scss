@@ -1,21 +1,24 @@
 .service-cards {
    
     .card {
+        transition: all 0.1s ease-in;
         background: $color_white_alt!important;
         border: none;
-        transition: all .3s linear;
         padding: 2rem 0.95rem;
         border-radius: 0;
         font-weight: 300;
         font-size: 0.85rem;
-
+    
+        @include respond(tab-port) {
+            padding: 0rem;
+        }
         
         &:hover {
             box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
         }
              &:hover .service-cards__title {
                 color: $color_primary_2;
-            }
+        }
     }
     &__icon {
         font-size: 3.5rem;
@@ -24,6 +27,13 @@
         font-family: $font_alt;
         letter-spacing: 3px;
         text-transform: uppercase;
+
+            @include respond(tab-port) {
+            font-size: 0.7rem;
+                padding: 0rem;
+        }
+
+    
     }
     &__text {
         color: $color_gray;
