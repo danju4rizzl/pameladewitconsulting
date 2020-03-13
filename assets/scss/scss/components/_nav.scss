@@ -1,10 +1,19 @@
 .navbar {
-    font-family: lato;
     .nav {
-        font-size: 0.78rem;
-        letter-spacing: 3.5px;
         &-item {
             padding: 0rem 1.8rem;
+            font-size: 0.79rem;
+            font-weight: 600;
+            letter-spacing: 3.1px;
+            transition: all .5s ease-in-out;
         }
+        
+        &-link { 
+            &:hover {
+             outline: 1px solid $color_primary_2;
+             color:$color_primary_2!important;
+             font-weight: 600;   
+         }
+       }
     }
 }
