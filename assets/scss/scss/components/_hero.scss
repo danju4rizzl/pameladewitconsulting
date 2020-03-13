@@ -1,0 +1,62 @@
+.hero {
+background-image: linear-gradient(to bottom, rgba($color_black_alt, .85), rgba($color_black, .95)), url('https://i.ibb.co/f9zmC1b/you-x-ventures-Oalh2-Moj-Uuk-unsplash-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    height: 35rem;
+
+    &__heading {
+        color: $color_white;
+        font-weight: 300;
+        
+        &--main {
+        display: block;
+        letter-spacing: 12px;            
+        text-transform: uppercase;
+
+                   
+        @include respond(phone) {
+            font-size: 0.7rem;
+            padding: 0rem 3rem;
+            margin-top: 2rem;
+            } 
+        }
+ 
+        &--sub {
+            display: block;
+            font-family: $font_alt;
+            font-size: 5rem;
+            padding: 0rem 5rem;
+            margin: 2rem auto;
+            color: $color_primary_0;
+
+            
+        @include respond(tab-port) {
+            font-size: 3rem;
+            margin: 0.5rem auto;
+            padding: 0rem 3rem;
+        }
+                               
+        @include respond(phone) {
+            font-size: 2rem;
+            padding: 1rem;
+        } 
+       }  
+        
+      &--slug {
+        display: block;
+        color: $color_white;
+        letter-spacing: 2px;
+        text-transform: none;
+        line-height: 1.85rem;
+        font-size: 0.85rem;
+        padding: 0 15rem;
+                     
+        @include respond(phone) {
+            font-size: 0.7rem;
+            padding: 1rem;
+            line-height: 0.95rem;
+        } 
+      } 
+    }
+}

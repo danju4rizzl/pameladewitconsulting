@@ -1,0 +1,10 @@
+.navbar {
+    font-family: lato;
+    .nav {
+        font-size: 0.78rem;
+        letter-spacing: 3.5px;
+        &-item {
+            padding: 0rem 1.8rem;
+        }
+    }
+}
