@@ -1,4 +1,5 @@
 .contact {
+    background: rgba($color_white_alt, .95);
     &__form {
         .form-control {
         background: transparent;
@@ -16,6 +17,7 @@
             &:focus {
                 outline: none;
                 box-shadow: 0 5px 32px rgba(103,122,141,.17);
+                   background: $color_white;
             }
         }
         

@@ -5,6 +5,16 @@
             border-style: solid;
             border-width: 4px 0px 0px 0px;
             border-color: rgba(34,34,34,0);
+            
+            &:not(:last-child){
+             @include respond(tab-land) {
+             margin-right: 2rem;
+             }  
+            @include respond(tab-port) {
+                margin: 0rem;
+            }
+            }     
+            
         }
         
         &-link {            
@@ -21,6 +31,16 @@
              color:$color_primary_2!important;
              font-weight: 600;   
          }
+
+            @include respond(tab-land) {
+                letter-spacing: 2.1px;
+            }
+            
+            
+        @include respond(tab-port) {
+            padding: 1rem 2rem;
+            letter-spacing: 2.1px;
+        }
        }
     }
 }

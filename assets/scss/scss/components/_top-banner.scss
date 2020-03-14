@@ -1,0 +1,14 @@
+// ! Set to display none (work in progress)
+.banner-top {
+    display: none;
+    &__inner {
+    height: 2rem;
+
+    }
+    &__item {
+    border: none;
+    height: 100%;
+        
+    }
+    
+}

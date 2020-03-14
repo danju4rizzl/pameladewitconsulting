@@ -1,0 +1,17 @@
+.about-page {
+    &__intro{
+        padding-bottom: 3rem;
+    }
+    &__section-about {
+        background-image: linear-gradient(to left bottom, rgba($color_black, .95), rgba($color_black_alt, .85)), url('https://i.ibb.co/xm50NRc/workplace-1245776-1280.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: top center;
+        height: 100%;
+        &__inner {
+             line-height: 35px;       
+            
+
+        }   
+    }
+}

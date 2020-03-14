@@ -1,7 +1,6 @@
 /* Variables */
 /*Mixins*/
 body {
-  background: #f3f3f3;
   font-family: "Montserrat", Sans-serif;
   color: #222222;
   font-weight: 300;
@@ -23,6 +22,18 @@ body {
   border-color: rgba(34, 34, 34, 0);
 }
 
+@media only screen and (max-width: 75em) {
+  .navbar .nav-item:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .navbar .nav-item:not(:last-child) {
+    margin: 0rem;
+  }
+}
+
 .navbar .nav-link {
   display: inline-block !important;
   padding: 1rem 2rem;
@@ -38,6 +49,19 @@ body {
   outline: 1px solid #FFD24C;
   color: #FFD24C !important;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 75em) {
+  .navbar .nav-link {
+    letter-spacing: 2.1px;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .navbar .nav-link {
+    padding: 1rem 2rem;
+    letter-spacing: 2.1px;
+  }
 }
 
 .hero {
@@ -109,8 +133,15 @@ body {
   }
 }
 
+.hero--about {
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.55), rgba(0, 0, 0, 0.55)), url("https://i.ibb.co/LgcMpLt/download-force-true-w-1920.jpg");
+  background-attachment: scroll;
+  background-position: center bottom;
+  height: 23rem;
+}
+
 .service-cards .card {
-  background: #f3f3f3 !important;
+  background: #FFFFFF !important;
   border: none;
   padding: 1rem 0.95rem 0.5rem;
   border-radius: 0;
@@ -160,15 +191,14 @@ body {
 }
 
 .about-section-left {
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.55)), url("https://i.ibb.co/sydnxzF/download-force-true-w-640.jpg");
+  background-image: url("https://i.ibb.co/sydnxzF/download-force-true-w-640.jpg");
   background-size: cover;
   background-position: center center;
-  filter: grayscale(1);
   height: 100%;
 }
 
 .about-section-right {
-  padding: 3rem 4rem;
+  padding: 1rem 4rem;
 }
 
 .about-section__text {
@@ -181,11 +211,10 @@ body {
 }
 
 .misson-section-right {
-  background-image: linear-gradient(to left top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.95)), url("https://i.ibb.co/ctsPrtd/download-force-true-w-1920.jpg");
+  background-image: url("https://i.ibb.co/ctsPrtd/download-force-true-w-1920.jpg");
   background-size: cover;
   background-position: top center;
   height: 100%;
-  filter: grayscale(1);
 }
 
 .btn-main {
@@ -268,6 +297,23 @@ body {
   padding: 0px 0px 0px;
 }
 
+.banner-top {
+  display: none;
+}
+
+.banner-top__inner {
+  height: 2rem;
+}
+
+.banner-top__item {
+  border: none;
+  height: 100%;
+}
+
+.contact {
+  background: rgba(243, 243, 243, 0.95);
+}
+
 .contact__form .form-control {
   background: transparent;
   color: #222222;
@@ -284,8 +330,25 @@ body {
 .contact__form .form-control:focus {
   outline: none;
   box-shadow: 0 5px 32px rgba(103, 122, 141, 0.17);
+  background: #FFFFFF;
 }
 
 .footer-clean a:hover {
   color: #F2BD1F !important;
+}
+
+.about-page__intro {
+  padding-bottom: 3rem;
+}
+
+.about-page__section-about {
+  background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.95), rgba(34, 34, 34, 0.85)), url("https://i.ibb.co/xm50NRc/workplace-1245776-1280.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  height: 100%;
+}
+
+.about-page__section-about__inner {
+  line-height: 35px;
 }
