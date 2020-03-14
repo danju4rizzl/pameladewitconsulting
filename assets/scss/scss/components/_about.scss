@@ -2,10 +2,11 @@
     background: $color_white;
     
     &-left {
-    background-image: linear-gradient(to right bottom, rgba($color_white, .1), rgba($color_white, 0.95)), url('https://i.ibb.co/JCsZ1vG/mimi-thian-VHQ0cw2eu-A-unsplash.jpg');
-    background-size: cover;
-    background-position: top center;
-    height: 100%;
+        background-image: linear-gradient(to right bottom, rgba($color_white, .1), rgba($color_white, 0.55)), url('https://i.ibb.co/sydnxzF/download-force-true-w-640.jpg');
+        background-size: cover;
+        background-position: center center;
+        filter: grayscale(1);
+        height: 100%;
     }
     
     &-right {
@@ -16,5 +17,18 @@
         color: $color_gray;
         line-height: 29px;
     }
-    
+}
+
+.misson-section {
+    &-left {
+        padding: 1rem 4rem;
+    }
+    &-right {
+        background-image: linear-gradient(to left top, rgba($color_white, .1), rgba($color_white, 0.95)), url('https://i.ibb.co/ctsPrtd/download-force-true-w-1920.jpg');
+        background-size: cover;
+        background-position: top center;
+        height: 100%;
+        filter: grayscale(1);
+        
+    }
 }

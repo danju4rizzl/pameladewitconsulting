@@ -100,10 +100,9 @@ body {
 }
 
 .service-cards .card {
-  transition: all 0.1s ease-in;
   background: #f3f3f3 !important;
   border: none;
-  padding: 2rem 0.95rem;
+  padding: 2rem 0.95rem 1rem;
   border-radius: 0;
   font-weight: 300;
   font-size: 0.85rem;
@@ -116,11 +115,17 @@ body {
 }
 
 .service-cards .card:hover {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(34, 34, 34, 0.5);
 }
 
 .service-cards .card:hover .service-cards__title {
   color: #FFD24C;
+  transition: all .3s ease-in;
+}
+
+.service-cards .card__list {
+  line-height: 27.2px;
+  color: #4c4d4f;
 }
 
 .service-cards__icon {
@@ -140,18 +145,15 @@ body {
   }
 }
 
-.service-cards__text {
-  color: #4c4d4f;
-}
-
 .about-section {
   background: #FFFFFF;
 }
 
 .about-section-left {
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.95)), url("https://i.ibb.co/JCsZ1vG/mimi-thian-VHQ0cw2eu-A-unsplash.jpg");
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.55)), url("https://i.ibb.co/sydnxzF/download-force-true-w-640.jpg");
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
+  filter: grayscale(1);
   height: 100%;
 }
 
@@ -162,4 +164,113 @@ body {
 .about-section__text {
   color: #4c4d4f;
   line-height: 29px;
+}
+
+.misson-section-left {
+  padding: 1rem 4rem;
+}
+
+.misson-section-right {
+  background-image: linear-gradient(to left top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.95)), url("https://i.ibb.co/ctsPrtd/download-force-true-w-1920.jpg");
+  background-size: cover;
+  background-position: top center;
+  height: 100%;
+  filter: grayscale(1);
+}
+
+.btn-main {
+  background: transparent;
+  padding: 1rem 2rem;
+  color: #FFD24C;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  border: 1px solid currentColor;
+  transition: all .3s ease-in-out;
+}
+
+.btn-main:hover {
+  background: #FFD24C;
+  color: #FFFFFF;
+  border: 1px solid currentColor;
+}
+
+.btn-main:active {
+  transform: translateY(1.5px);
+  background: #9C7500 !important;
+  border-color: currentColor !important;
+  box-shadow: 0 0 0 0.2rem rgba(156, 117, 0, 0);
+}
+
+.counter {
+  font-size: 3rem;
+}
+
+.counter__count {
+  font-family: "Oswald", Sans-serif;
+  font-size: 2.3rem;
+  letter-spacing: 3.5px;
+  margin: 0;
+}
+
+.counter__title {
+  font-size: 0.85rem;
+  letter-spacing: 0.1px;
+  text-transform: capitalize;
+}
+
+.testimony {
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.85), rgba(0, 0, 0, 0.75)), url("https://i.ibb.co/NxXhnJk/testim-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 32em;
+}
+
+.testimony__inner {
+  color: #FFFFFF;
+  line-height: 33px;
+  overflow: hidden;
+}
+
+.testimony__icon {
+  font-size: 10rem;
+  margin: 2rem auto;
+}
+
+.testimony__text {
+  padding: 0rem 15em;
+}
+
+.testimony__name {
+  font-family: "Oswald", Sans-serif;
+  font-weight: normal;
+  letter-spacing: 4px;
+  padding: 0px 0px 0px;
+}
+
+.testimony__title {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 0px 0px 0px;
+}
+
+.contact__form .form-control {
+  background: transparent;
+  color: #222222;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 17px;
+  letter-spacing: 5px;
+  padding: 10px 20px 10px 10px;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+}
+
+.contact__form .form-control:focus {
+  outline: none;
+  box-shadow: 0 5px 32px rgba(103, 122, 141, 0.17);
 }
