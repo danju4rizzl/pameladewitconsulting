@@ -7,10 +7,6 @@ body {
   font-weight: 300;
 }
 
-a:hover {
-  color: #F2BD1F !important;
-}
-
 .section-heading {
   text-transform: uppercase;
   font-family: "Oswald", Sans-serif;
@@ -278,4 +274,8 @@ a:hover {
 .contact__form .form-control:focus {
   outline: none;
   box-shadow: 0 5px 32px rgba(103, 122, 141, 0.17);
+}
+
+.footer-clean a:hover {
+  color: #F2BD1F !important;
 }
