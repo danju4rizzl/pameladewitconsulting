@@ -16,14 +16,14 @@
     }    
     &__text {
         padding: 0rem 15em;
-        
     }
 
     &__name {
         font-family: $font_alt;
         font-weight: normal;
         letter-spacing: 4px;
-        padding: 0px 0px 0px 
+        padding: 0px 0px 0px;
+        color: $color_primary_0;
     }
     &__title {
         font-size: 14px;

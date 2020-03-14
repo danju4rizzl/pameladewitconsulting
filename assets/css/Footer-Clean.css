@@ -27,6 +27,7 @@
 
 .footer-clean ul a:hover {
   opacity: 1;
+  color: $color_primary_0;
 }
 
 .footer-clean .item.social {

@@ -4,3 +4,10 @@ body {
     color: $color_black_alt;
     font-weight: 300;
 }
+
+a {
+    &:hover {
+        color: $color_primary_0!important;
+        
+    }
+}

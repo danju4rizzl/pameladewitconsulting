@@ -7,12 +7,16 @@ body {
   font-weight: 300;
 }
 
+a:hover {
+  color: #F2BD1F !important;
+}
+
 .section-heading {
   text-transform: uppercase;
   font-family: "Oswald", Sans-serif;
   font-size: 36px;
   letter-spacing: 9.2px;
-  margin: 3rem auto;
+  margin: 5rem auto;
   font-weight: 300;
 }
 
@@ -247,6 +251,7 @@ body {
   font-weight: normal;
   letter-spacing: 4px;
   padding: 0px 0px 0px;
+  color: #F2BD1F;
 }
 
 .testimony__title {
